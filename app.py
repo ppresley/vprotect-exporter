@@ -71,10 +71,10 @@ vprotect_node_info = Gauge(
 )
 
 # API configuration
-API_BASE_URL = 'https://192.168.70.108/api'
+API_BASE_URL = 'https://<<host>>/api'
 LOGIN_URL = f'{API_BASE_URL}/session/login'
-USERNAME = 'prometheus'
-PASSWORD = '7e@YoP_2Se6-'
+USERNAME = ''
+PASSWORD = ''
 VM_URL = f'{API_BASE_URL}/virtual-machines'
 SCHEDULES_URL = f'{API_BASE_URL}/schedules'
 TASKS_URL = f'{API_BASE_URL}/tasks'
