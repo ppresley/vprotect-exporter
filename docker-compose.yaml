@@ -1,0 +1,9 @@
+services:
+  backup-exporter:
+    image: vprotect-exporter:v1-new
+    container_name: vprotect-exporter
+    volumes:
+      - ./app.py:/app/vprotect_exporter.py
+    ports:
+      - "9176:9176"  # Expose Prometheus metrics on port 9176
+    restart: unless-stopped
